@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj": {}
+    "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj": {
+    "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj",
+        "projectUniqueName": "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj",
         "projectName": "VoeAirlinesSenai",
-        "projectPath": "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj",
-        "packagesPath": "C:\\Users\\Professor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\obj\\",
+        "projectPath": "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj",
+        "packagesPath": "C:\\Users\\romulo.leite\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Professor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\romulo.leite\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +43,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.8, )"
@@ -59,8 +64,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
