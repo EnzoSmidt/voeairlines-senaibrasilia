@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using VoeAirlinesSenai.Entities;
+using VoeAirlinesSenai.EntityConfigurations;
+
 namespace VoeAirlinesSenai.Contexts;
 
 public class VoeAirlinesContext : DbContext
@@ -20,5 +22,16 @@ public class VoeAirlinesContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
        optionsBuilder.UseSqlServer(_configuration.GetConnectionString("VoeAirlines"));
     }
+    protected override void OnModelCreating(ModelBuilder modelBuilder){
+         
+         modelBuilder.ApplyConfiguration(new AeronaveConfiguration());
+         modelBuilder.ApplyConfiguration(new PilotoConfiguration());
+         modelBuilder.ApplyConfiguration(new VooConfiguration());
+         modelBuilder.ApplyConfiguration(new CancelamentoConfiguration());
+         modelBuilder.ApplyConfiguration(new ManutencaoConfiguration());
+
+
+    }
+
 
 }
