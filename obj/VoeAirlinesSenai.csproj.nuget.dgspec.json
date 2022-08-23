@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj": {}
+    "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj": {}
   },
   "projects": {
-    "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj": {
+    "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj",
+        "projectUniqueName": "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj",
         "projectName": "VoeAirlinesSenai",
-        "projectPath": "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\VoeAirlinesSenai.csproj",
-        "packagesPath": "C:\\Users\\romulo.leite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\romulo.leite\\desktop\\voeairlines-senaibrasilia\\obj\\",
+        "projectPath": "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\VoeAirlinesSenai.csproj",
+        "packagesPath": "C:\\Users\\Professor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Professor\\desktop\\voeairlines-senai\\VoeAirlinesSenai\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\romulo.leite\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Professor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +71,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
