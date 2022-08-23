@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using VoeAirlinesSenai.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -49,6 +50,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CiaAerea.EntityConfigurations;
+=======
+
+using VoeAirlinesSenai.Contexts;
+using VoeAirlinesSenai.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace VoeAirlinesSenai.EntityConfigurations;
+
+>>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
 
 public class AeronaveConfiguration : IEntityTypeConfiguration<Aeronave>
 {
@@ -74,6 +85,10 @@ public class AeronaveConfiguration : IEntityTypeConfiguration<Aeronave>
                .WithOne(m => m.Aeronave)
                .HasForeignKey(m => m.AeronaveId);
     }
+<<<<<<< HEAD
 }
 
 */
+=======
+}
+>>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7

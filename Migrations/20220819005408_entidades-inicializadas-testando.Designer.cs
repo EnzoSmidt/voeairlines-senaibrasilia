@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VoeAirlinesSenai.Contexts;
 
@@ -11,9 +12,10 @@ using VoeAirlinesSenai.Contexts;
 namespace VoeAirlinesSenai.Migrations
 {
     [DbContext(typeof(VoeAirlinesContext))]
-    partial class VoeAirlinesContextModelSnapshot : ModelSnapshot
+    [Migration("20220819005408_entidades-inicializadas-testando")]
+    partial class entidadesinicializadastestando
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -32,24 +34,6 @@ namespace VoeAirlinesSenai.Migrations
 
                     b.Property<string>("Codigo")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
-
-                    b.Property<string>("Fabricante")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Modelo")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Aeronaves", (string)null);
-=======
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Fabricante")
@@ -63,7 +47,6 @@ namespace VoeAirlinesSenai.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Aeronaves");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
                 });
 
             modelBuilder.Entity("VoeAirlinesSenai.Entities.Cancelamento", b =>
@@ -79,12 +62,7 @@ namespace VoeAirlinesSenai.Migrations
 
                     b.Property<string>("Motivo")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-=======
                         .HasColumnType("nvarchar(max)");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
 
                     b.Property<int>("VooId")
                         .HasColumnType("int");
@@ -94,11 +72,7 @@ namespace VoeAirlinesSenai.Migrations
                     b.HasIndex("VooId")
                         .IsUnique();
 
-<<<<<<< HEAD
-                    b.ToTable("Cancelamentos", (string)null);
-=======
                     b.ToTable("Cancelamentos");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
                 });
 
             modelBuilder.Entity("VoeAirlinesSenai.Entities.Manutencao", b =>
@@ -116,12 +90,7 @@ namespace VoeAirlinesSenai.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Observacoes")
-<<<<<<< HEAD
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-=======
                         .HasColumnType("nvarchar(max)");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
 
                     b.Property<int>("Tipo")
                         .HasColumnType("int");
@@ -130,11 +99,7 @@ namespace VoeAirlinesSenai.Migrations
 
                     b.HasIndex("AeronaveId");
 
-<<<<<<< HEAD
-                    b.ToTable("Manutencoes", (string)null);
-=======
                     b.ToTable("Manutencoes");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
                 });
 
             modelBuilder.Entity("VoeAirlinesSenai.Entities.Piloto", b =>
@@ -147,22 +112,6 @@ namespace VoeAirlinesSenai.Migrations
 
                     b.Property<string>("Matricula")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Matricula")
-                        .IsUnique();
-
-                    b.ToTable("Piloto", (string)null);
-=======
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
@@ -172,7 +121,6 @@ namespace VoeAirlinesSenai.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Pilotos");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
                 });
 
             modelBuilder.Entity("VoeAirlinesSenai.Entities.Voo", b =>
@@ -194,21 +142,11 @@ namespace VoeAirlinesSenai.Migrations
 
                     b.Property<string>("Destino")
                         .IsRequired()
-<<<<<<< HEAD
-                        .HasMaxLength(3)
-                        .HasColumnType("nvarchar(3)");
-
-                    b.Property<string>("Origem")
-                        .IsRequired()
-                        .HasMaxLength(3)
-                        .HasColumnType("nvarchar(3)");
-=======
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Origem")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
 
                     b.Property<int>("PilotoId")
                         .HasColumnType("int");
@@ -219,11 +157,7 @@ namespace VoeAirlinesSenai.Migrations
 
                     b.HasIndex("PilotoId");
 
-<<<<<<< HEAD
-                    b.ToTable("Voos", (string)null);
-=======
                     b.ToTable("Voos");
->>>>>>> 00825fd5e8b29a97ad86c727a2dd0b07d6ba36d7
                 });
 
             modelBuilder.Entity("VoeAirlinesSenai.Entities.Cancelamento", b =>
